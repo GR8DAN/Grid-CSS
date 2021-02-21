@@ -1,6 +1,6 @@
 /*
-* markdown cms CSS V0.2020.11.14
-* Copyright (c) 2015-2020 Daniel S. Fowler
+* Grid CSS V1.2021.02.20
+* Copyright (c) 2015-2021 Daniel S. Fowler
 * Derived from Skeleton V2.0.4:-
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
@@ -18,10 +18,12 @@
 - Buttons
 - Forms
 - Lists
+- Navigation Menu
 - Code
 - Tables
 - Spacing
 - Utilities
+- Miscellaneous
 - Clearing
 - Media Queries
 */
@@ -33,7 +35,7 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 4px;
   box-sizing: border-box; }
 .column,
 .columns {
@@ -54,62 +56,64 @@
     width: 95%; }
   .column,
   .columns {
-    margin-left: 1%; }
+    margin-left: 0.4%; }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
 
   .one.column,
-  .one.columns                    { width: 7.41666666667%; }
-  .two.columns                    { width: 15.8333333333%; }
-  .three.columns                  { width: 24.25%;         }
-  .four.columns                   { width: 32.6666666667%; }
-  .five.columns                   { width: 41.0833333331%; }
-  .six.columns                    { width: 49.5%;          }
-  .seven.columns                  { width: 57.9166666665%; }
-  .eight.columns                  { width: 66.3333333332%; }
-  .nine.columns                   { width: 74.7499999999%; }
-  .ten.columns                    { width: 83.1666666666%; }
-  .eleven.columns                 { width: 91.5833333333%; }
+  .one.columns                    { width: 7.96666666667%; }
+  .two.columns                    { width: 16.3333333333%; }
+  .three.columns                  { width: 24.7%;          }
+  .four.columns                   { width: 33.0666666667%; }
+  .five.columns                   { width: 41.4333333335%; }
+  .six.columns                    { width: 49.8%;          }
+  .seven.columns                  { width: 58.1666666665%; }
+  .eight.columns                  { width: 66.5333333333%; }
+  .nine.columns                   { width: 74.9%; }
+  .ten.columns                    { width: 83.2666666667%; }
+  .eleven.columns                 { width: 91.6333333333%; }
   .twelve.columns                 { width: 100%; margin-left: 0; }
 
-  .one-third.column               { width: 30.6666666667%; }
-  .two-thirds.column              { width: 65.3333333333%; }
+  .one-third.column               { width: 33.0666666667%; }
+  .two-thirds.column              { width: 66.5333333333%; }
 
-  .one-half.column                { width: 49.5%; }
-
+  .one-half.column                { width: 49.8%; }
+  
   /* Offsets */
   .offset-by-one.column,
-  .offset-by-one.columns          { margin-left: 7.41666666667%; }
+  .offset-by-one.columns          { margin-left: 8.36666666667%; }
   .offset-by-two.column,
-  .offset-by-two.columns          { margin-left: 17.3333333333%; }
+  .offset-by-two.columns          { margin-left: 16.7333333333%; }
   .offset-by-three.column,
-  .offset-by-three.columns        { margin-left: 26%;            }
+  .offset-by-three.columns        { margin-left: 25.1%;          }
   .offset-by-four.column,
-  .offset-by-four.columns         { margin-left: 34.6666666667%; }
+  .offset-by-four.columns         { margin-left: 33.4666666667%; }
   .offset-by-five.column,
-  .offset-by-five.columns         { margin-left: 43.3333333333%; }
+  .offset-by-five.columns         { margin-left: 41.8333333335%; }
   .offset-by-six.column,
-  .offset-by-six.columns          { margin-left: 52%;            }
+  .offset-by-six.columns          { margin-left: 50.2%         ; }
   .offset-by-seven.column,
-  .offset-by-seven.columns        { margin-left: 60.6666666667%; }
+  .offset-by-seven.columns        { margin-left: 58.5666666665%; }
   .offset-by-eight.column,
-  .offset-by-eight.columns        { margin-left: 69.3333333333%; }
+  .offset-by-eight.columns        { margin-left: 66.9333333333%; }
   .offset-by-nine.column,
-  .offset-by-nine.columns         { margin-left: 78.0%;          }
+  .offset-by-nine.columns         { margin-left: 75.3%;          }
   .offset-by-ten.column,
-  .offset-by-ten.columns          { margin-left: 86.6666666667%; }
+  .offset-by-ten.columns          { margin-left: 83.6666666667%; }
   .offset-by-eleven.column,
-  .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
+  .offset-by-eleven.columns       { margin-left: 92.0333333333%; }
 
   .offset-by-one-third.column,
-  .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
+  .offset-by-one-third.columns    { margin-left: 33.4666666667%; }
   .offset-by-two-thirds.column,
-  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+  .offset-by-two-thirds.columns   { margin-left: 66.9333333333%; }
 
   .offset-by-one-half.column,
-  .offset-by-one-half.columns     { margin-left: 52%; }
-
+  .offset-by-one-half.columns     { margin-left: 50.2%; }
+  
+  /* Extra spacing, used with a non-breaking space*/
+  .spacer.column                  { width: 0.0%;}
 }
 
 /* Base Styles
@@ -121,7 +125,7 @@ html {
   font-size: 62.5%; }
 body {
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.6;
+  line-height: 1.4;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222; }
@@ -129,8 +133,8 @@ body {
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 0.8rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.6rem;
   font-weight: 300; }
 h1 { font-size: 3rem; line-height: 1.2;  letter-spacing: -.1rem;}
 h2 { font-size: 2.6rem; line-height: 1.25; letter-spacing: -.1rem; }
@@ -300,7 +304,7 @@ ol ul {
   margin: 1.2rem 0 0.6rem 2rem;
   font-size: 90%; }
 li {
-  margin-bottom: 0.4rem; }
+  margin-bottom: 0.2rem; }
 
 /* Main Navigation Menu
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -309,16 +313,16 @@ nav > ul > li {display:inline-block;}
 /* Drop menu under its parent */
 nav ul li ul {position:absolute;}
 /* Remove list padding and bullet points */
-nav ul {padding:0 0 0 6pt;list-style:none;background-color:#2e8dd8;margin:0;}
+nav ul {padding:0 0 0 6pt;list-style:none;background-color:#33C3F0;margin:0;border-radius: 4px;}
 /* Dropdown list invisible until... */
 nav ul li ul {visibility:hidden;}
 /* .. the parent list is hovered over */                  
 nav ul li:hover > ul {visibility:visible;}
 /* Format the menu's look */
-nav li {background:#2e8dd8;padding:6pt;margin-bottom:0;}
-nav a {text-decoration:none;color:white;}
+nav li {background:#33C3F0;padding:6pt;margin-bottom:0;}
+nav a {color:white;}
 nav li a:hover {color:black;}
-nav li:hover {background:#2e8dd8;}
+nav li:hover {background:#33C3F0;}
 nav ul li ul li {margin-top:3pt;}
 
 /* Code
@@ -341,7 +345,7 @@ pre > code {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 th,
 td {
-  padding: 12px 15px;
+  padding: 8px 12px;
   text-align: left;
   border-bottom: 1px solid #E1E1E1; }
 th:first-child,
@@ -391,8 +395,8 @@ img {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 1.8rem;
-  margin-bottom: 2.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 

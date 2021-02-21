@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>A Grid CSS Test Web Page</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="grid.css">
+		<style>
+			.addborder {border: 1px solid #1EAEDB;border-radius: 4px;}
+		</style>
+    </head>
+    <body>
+		<div class="container">
+			<div class="row">
+				<div class="twelve columns addborder">
+					<p><strong>Example Header Content</strong></P>
+					<p>This div's width is styled using <em>twelve columns</em>. A web page using <strong>grid.css</strong> is divided into
+					a maximum of 12 <em>columns</em>. All the columns styled divs sit within <em>row</em> styled divs. All row and
+					columns divs sit inside a top level <em>container</em> div. The container has <em>auto</em> left and right
+					margins to center the web page contents in the browser window. The container has a maximum width of 1200
+					pixels.</p>
+				</div>
+			</div>
+            <div class="row">
+				<div class="eight columns addborder">
+					<h1 class="sitetitle">A Grid CSS Test Web Page</h1>
+					<p>This is the test web page for the Grid Cascading Style Sheet (CSS) named <strong>grid.css</strong>, see the
+					article <a href="grid-css-old-skool" title="An article on grid.css.">Grid CSS Old Skool</a>.</p>
+					<p><strong>Example Main Content</strong></P>
+					<p>Hello World! This text is in a normal paragraph, using the <em>p</em> html tag.</p>
+					<p>This div's width is styled using <em>eight columns</em>. On some of these divs a blue border has been
+					added (not part of the Grid CSS), to allow you to see the column layouts.</p>
+					<p>This div and the next div are being used as an example of a main content area with a sidebar. Their four and eight columns styles add up to the maximum of twelve (8+4=12). Both the eight and the four columns divs sit within a row div.</p>
+				</div>
+				<div class="four columns addborder">
+					<p><strong>Example Sidebar Content</strong></p>
+					<p>This sidebar div has a <em>four columns</em> style.</p>
+					<p>Columns styled divs in the same row have a small left margin to ensure adjacent div contents are separated.</p>
+					<p>To show the responsive behaviour, if the browser window is narrowed, or this page is viewed on a mobile device,
+					the divs will shrink in width. Once the browser window gets too narrrow, this sidebar will drop below the other
+					divs in the same <em>row</em>.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns addborder">
+					<p><strong>Example Footer Content</strong></p>
+					<p>This is a another <em>row</em> styled div containing a <em>twelve columns</em> div. This div is being used as a
+					content footer.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h2>This Test Page's Code</h2>
+					<p>To see how a basic Grid CSS layout is constructed, as shown above, use the browser's <em>view page source</em>
+					option. The page code is accessed via the browser's context menu (normally from a right-click, or equivalent, on the
+					webpage). The layout above shows an example of the Grid CSS in action, more styles from Grid CSS are provided below.</p>
+					<h2>Grid CSS Examples</h2>
+					The rest of this Grid CSS test page is showing most of the HTML elements styled using <em>grid.css</em>.
+					<h3>Column Styles</h3>
+					<p>The following, with a blue border added, are various <em>columns</em> styled divs set within <em>row</em> styled divs.
+					Columns styled divs in rows should not total more than twelve. The style is applied by setting the div's class attribute to
+					the required column width (one, two, three...twelve), with the word <em>column</em> or <em>columns</em>. For example, for
+					the first row below there are twelve "one column" (or "one columns") styled divs. Either the single (column) or plural (columns) can be
+					used.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+				<div class="one column addborder"><strong>One</strong></div>
+			</div>
+			<div class="row">
+				<div class="two columns addborder"><strong>Two</strong> - "two columns"</div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+			</div>
+			<div class="row">
+				<div class="three columns addborder"><strong>Three</strong> - "three columns"</div>
+				<div class="three columns addborder"><strong>Three</strong></div>
+				<div class="three columns addborder"><strong>Three</strong></div>
+				<div class="three columns addborder"><strong>Three</strong></div>
+			</div>
+			<div class="row">
+				<div class="four columns addborder"><strong>Four</strong> - "four columns"</div>
+				<div class="four columns addborder"><strong>Four</strong></div>
+				<div class="four columns addborder"><strong>Four</strong></div>
+			</div>
+			<div class="row">
+				<div class="five columns addborder"><strong>Five</strong> - "five columns"</div>
+				<div class="five columns addborder"><strong>Five</strong></div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+			</div>
+			<div class="row">
+				<div class="six columns addborder"><strong>Six</strong> - "six columns"</div>
+				<div class="six columns addborder"><strong>Six</strong></div>
+			</div>
+			<div class="row">
+				<div class="seven columns addborder"><strong>Seven</strong> - "seven columns"</div>
+				<div class="five columns addborder"><strong>Five</strong></div>
+			</div>
+			<div class="row">
+				<div class="eight columns addborder"><strong>Eight</strong> - "eight columns"</div>
+				<div class="four columns addborder"><strong>Four</strong></div>
+			</div>
+			<div class="row">
+				<div class="nine columns addborder"><strong>Nine</strong> - "nine columns"</div>
+				<div class="three columns addborder"><strong>Three</strong></div>
+			</div>
+			<div class="row">
+				<div class="ten columns addborder"><strong>Ten</strong> - "ten columns"</div>
+				<div class="two columns addborder"><strong>Two</strong></div>
+			</div>
+			<div class="row">
+				<div class="eleven columns addborder"><strong>Eleven</strong> - "eleven columns"</div>
+				<div class="one columns addborder"><strong>One</strong></div>
+			</div>
+			<div class="row">
+				<div class="twelve columns addborder"><strong>Twelve</strong> - "twelve columns"</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h3>Third and Half Columns</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="one-third column addborder"><strong>One-third</strong> - "one-third column"</div>
+				<div class="one-third column addborder"><strong>One-third</strong></div>
+				<div class="one-third column addborder"><strong>One-third</strong></div>
+			</div>
+			<div class="row">
+				<div class="two-thirds column addborder"><strong>Two-thirds</strong> - "two-thirds column"</div>
+				<div class="one-third column addborder"><strong>One-third</strong></div>
+			</div>
+			<div class="row">
+				<div class="one-half column addborder"><strong>One-Half</strong> - "one-half column"</div>
+				<div class="one-half column addborder"><strong>One-Half</strong></div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h3>Column Offsets</h3>
+					<p>To move a column across a page, an <em>offset-by-x columns</em> style can be applied.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns addborder">"twelve columns"</div>
+			</div>
+			<div class="row">
+				<div class="eleven columns offset-by-one column addborder">"eleven columns offset-by-one column"</div>
+			</div>
+			<div class="row">
+				<div class="ten columns offset-by-two columns addborder">"ten columns offset-by-two columns"</div>
+			</div>
+			<div class="row">
+				<div class="nine columns offset-by-three columns addborder">"nine columns offset-by-three columns"</div>
+			</div>
+			<div class="row">
+				<div class="eight columns offset-by-four columns addborder">"eight columns offset-by-four columns"</div>
+			</div>
+			<div class="row">
+				<div class="seven columns offset-by-five columns addborder">"seven columns offset-by-five columns"</div>
+			</div>
+			<div class="row">
+				<div class="six columns offset-by-six columns addborder">"six columns offset-by-six columns"</div>
+			</div>
+			<div class="row">
+				<div class="five columns offset-by-seven columns addborder">"five columns offset-by-seven columns"</div>
+			</div>
+			<div class="row">
+				<div class="four columns offset-by-eight columns addborder">"four columns offset-by-eight columns"</div>
+			</div>
+			<div class="row">
+				<div class="three columns offset-by-nine columns addborder">"three columns offset-by-nine columns"</div>
+			</div>
+			<div class="row">
+				<div class="two columns offset-by-ten columns addborder">2 offset 10</div>
+			</div>
+			<div class="row">
+				<div class="one column offset-by-eleven columns addborder">1 offset 11</div>
+			</div>
+			<div class="row">
+				<div class="two-thirds column offset-by-one-third column addborder">"two-thirds column offset-by-one-third column"</div>
+			</div>
+			<div class="row">
+				<div class="one-half column offset-by-one-half column addborder">"one-half column offset-by-one-half column"</div>
+			</div>
+			<div class="row">
+				<div class="one-third column offset-by-two-thirds column addborder">"one-third column offset-by-two-thirds column"</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<p>When mixing several columns and offsets in the same row, the <em>spacer column</em> can be used to help align column
+					edges to those in previous rows. The spacer column div contains a non-breaking space (&amp;nbsp;), as used before the
+					2nd and 3rd offset columns below.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="four columns offset-by-one column addborder">"four columns offset-by-one column"</div>
+				<div class="spacer column">&nbsp;</div>
+				<div class="three columns offset-by-two columns addborder">3 offset 2 with spacer before and after</div>
+				<div class="spacer column">&nbsp;</div>
+				<div class="one column offset-by-one column addborder">1 offset 1</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h3>Header Styles</h3>
+					<p>Here are the header styles, <em>h1</em> to <em>h6</em>.</p>
+					<h1>Header h1</h1>
+					<h2>Header h2</h2>
+					<h3>Header h3</h3>
+					<h4>Header h4</h4>
+					<h5>Header h5</h5>
+					<h6>Header h6</h6>
+					<h3>Link Tag</h3>
+					<a href="#next" title="This is a link">Link</a>
+					<a name="next"></a><p></p>
+					<h3>HTML Buttons</h3>
+					<button type="button">Button</button>
+					<button type="submit">Submit</button>
+					<button type="reset">Reset</button>
+					<button class="button-primary" type="button">Styled with class="button-primary"</button>
+					<h3>HTML Forms (Labels and Inputs)</h3>
+					<form>
+						<div>
+							<label style="width: 80px; display: inline-block;">Text:</label>
+							<input type="text" maxlength="50"/>
+						</div>
+						<div>
+							<label style="width: 80px; display: inline-block;">Number:</label>
+							<input type="number" maxlength="50"/>
+						</div>
+						<div>
+							<label style="width: 80px; display: inline-block;">Search:</label>
+							<input type="search" maxlength="50"/>
+						</div>
+						<div>
+							<label style="width: 80px; display: inline-block;">Url:</label>
+							<input type="url" maxlength="50"/>
+						</div>
+						<div>
+							<label style="width: 80px; display: inline-block;">Password:</label>
+							<input type="password" maxlength="50"/>
+						</div>
+						<fieldset>
+							<legend>Legend in fieldset</legend>
+							<div>
+								<label style="width: 80px; display: inline-block;">Email:</label>
+								<input type="email" maxlength="50"/>
+							</div>
+							<div>
+								<label style="width: 80px; display: inline-block;">Tel:</label>
+								<input type="tel" maxlength="50"/>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div>
+								<input type="radio" name="rad1"/>
+								<label style="display: inline-block;">This radio button</label>
+							</div>
+							<div>
+								<input type="radio" name="rad1"/>
+								<label style="display: inline-block;">Or the other radio button</label>
+							</div>
+						</fieldset>
+						<fieldset>
+							<div>
+								<input type="checkbox" id="chk1"/>
+								<label style="display: inline-block;">Choose this checkbox</label>
+							</div>
+							<div>
+								<input type="checkbox" id="chk2"/>
+								<label style="display: inline-block;">And this one</label>
+							</div>
+						</fieldset>
+						<div>
+							<label>Text Area:</label>
+							<textarea cols="70" rows="4"
+									  maxlength="1000"></textarea>
+						</div>
+					</form>
+					<h3>Lists</h3>
+					<ol>
+					  <li>First ordered list item.</li>
+					  <li>Second ordered list item.</li>
+					  <li>Etc.</li>
+					</ol>
+					<ul>
+					  <li>First unordered list item.</li>
+					  <li>Second unordered list item.</li>
+					  <li>Etc.</li>
+					</ul>
+					<h3>Menu using "nav" and lists</h3>
+					<nav> <!-- nav tag is used to indicated a navigation section -->
+					<ul>
+						<li><a href="#anchor">Item 1</a></li>
+						<li><a href="#anchor">Item dropdown</a>
+							<ul>
+								<li><a href="#anchor">Drop 1</a></li>
+								<li><a href="#anchor">Drop 2</a></li>
+							</ul>
+						</li>
+						<li><a href="#anchor">Another item</a></li>
+					</ul>
+					<a name="anchor"></a><p></p>
+					</nav>
+					<h3>Code and Pre</h3>
+					<p>This is <strong>code</strong> on a single line:<code>main(){printf("hello, world\n");}</code></p>
+					<p>Some <strong>pre</strong>formatted <strong>code</strong>:</p>
+					<pre><code>main(){
+	printf("hello, world\n");
+}</pre></code>
+					<h3>Table</h3>
+					<table>
+						<thead>
+							<tr>
+								<th colspan="2">The table header</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>The table body</td>
+								<td>with two columns</td>
+							</tr>
+						</tbody>
+					</table>
+					<h3>Image</h3>
+					<img src="placeholder.png" alt="A placeholder graphic"/>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h3>Utility Styles</h3>
+					<ul>
+					  <li>u-full-width - Makes an element full width</li>
+					  <li>u-max-full-width - Keeps an element within its container</li>
+					  <li>u-pull-right - Float right</li>
+					  <li>u-pull-left - Float left</li>
+					  <li>u-cf - Clear a float</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<button class="u-full-width" type="button">Button across 12 columns styled with class="u-full-width"</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="six columns">
+					<p>Button pulled right in a six column div.</p>
+					<button class="u-pull-right" type="button">Styled with class="u-pull-right"</button>
+				</div>
+				<div class="six columns">
+				</div>
+			</div>
+			<div class="row">
+				<div class="twelve columns">
+					<h3>Horizontal Rule</h3>
+					<p>Finally, now ending with a horizontal rule, <em>hr</em>.</p>
+					<hr/>
+					<p>END</p>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

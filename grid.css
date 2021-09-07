@@ -1,5 +1,5 @@
 /*
-* Grid CSS V1.2021.02.20
+* Grid CSS V1.2021.09.07
 * Copyright (c) 2015-2021 Daniel S. Fowler
 * Derived from Skeleton V2.0.4:-
 * Copyright 2014, Dave Gamache
@@ -162,6 +162,8 @@ p {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
   color: #2E8DD8; }
+a[href] {
+  word-wrap:break-word; }  
 a:link {
     text-decoration: none; }
 a:hover {
@@ -325,8 +327,10 @@ nav li a:hover {color:black;}
 nav li:hover {background:#33C3F0;}
 nav ul li ul li {margin-top:3pt;}
 
-/* Code
+/* Code (and Pre)
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+pre {
+  white-space: pre-wrap;}
 code {
   padding: .2rem .5rem;
   margin: 0 .2rem;
@@ -338,8 +342,7 @@ code {
 pre > code {
   display: block;
   padding: 1rem 1.5rem;
-  white-space: pre; }
-
+  white-space: pre-wrap; }
 
 /* Tables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

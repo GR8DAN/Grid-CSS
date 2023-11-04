@@ -1,6 +1,6 @@
 /*
-* Grid CSS V1.2021.09.07
-* Copyright (c) 2015-2021 Daniel S. Fowler
+* Grid CSS V1.2023.11.04
+* Copyright (c) 2015-2023 Daniel S. Fowler
 * Derived from Skeleton V2.0.4:-
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
@@ -120,11 +120,11 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* NOTE
 html is set to 62.5% so that all the REM measurements throughout Skeleton
-are based on 10px sizing. So basically 1.5rem = 15px :) */
+are based on 10px sizing. So basically 1.6rem = 16px :) */
 html {
   font-size: 62.5%; }
 body {
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.6em;
   line-height: 1.4;
   font-weight: 400;
   font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -390,7 +390,8 @@ ul,
 ol,
 form {
   margin-bottom: 1.2rem; }
-img {
+img,
+video {
   max-width: 100%;
   height:  auto}
 
